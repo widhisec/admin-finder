@@ -26,7 +26,7 @@ read urls
 (
 for x in $(cat wordlist.txt);do 
     ((i=i%hitung)); ((i++==0)) && wait
-    scanlgsg $x $urls $lisz $fc
+    scanlgsg $x $urls $lisz $fc &
 done
 wait
 )
